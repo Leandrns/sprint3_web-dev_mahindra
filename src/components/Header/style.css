@@ -1,5 +1,11 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #0E29B4;
+    height: 80px;
+}
+
+.header img {
+    height: 80%;
 }
