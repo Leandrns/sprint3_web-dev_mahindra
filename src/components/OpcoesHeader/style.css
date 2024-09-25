@@ -1,0 +1,7 @@
+#opcoes {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 40px;
+    color: white;
+}
