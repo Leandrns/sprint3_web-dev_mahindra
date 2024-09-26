@@ -14,7 +14,7 @@
   
   .score-header {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around; 
   }
   
   .score-item {
