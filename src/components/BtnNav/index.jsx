@@ -3,7 +3,7 @@ import './style.css';
 const Button = ({ text }) => { // Corrigido para começar com letra maiúscula
     return (
         <button className='nav-button'>
-            {text}
+            <p>{text}</p>
         </button>
     );
 };

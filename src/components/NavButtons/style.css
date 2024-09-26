@@ -7,11 +7,17 @@
   cursor: pointer; 
   transition: background-color 0.3s; 
   display: block;
-  margin-left: 20px;
   margin-bottom: 10px;
-  width: 20%;
+  width: 100%;
+  
+}
+
+.nav-buttons{
+  width: 95%;
 }
 
 .nav-button:hover {
   background-color: #46DEFF; 
+  color: black;
 }
+
