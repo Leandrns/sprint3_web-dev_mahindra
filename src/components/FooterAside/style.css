@@ -1,0 +1,9 @@
+.footer-aside {
+    height: 40px;
+    background-color: #202020;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

@@ -1,7 +1,26 @@
 #opcoes {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 30px;
     margin-right: 40px;
     color: white;
+    font-size: 18px;
+}
+
+#opcoes li {
+    cursor: pointer;
+    
+    padding: 8px;
+    transition: all .5s;
+}
+
+#opcoes li:hover {
+    background-color: #d9d9d923;
+    border-radius: 8px;
+    color: #46DEFF;
+}
+
+#opcoes li p {
+    margin: 0;
 }

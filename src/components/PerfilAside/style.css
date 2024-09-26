@@ -1,0 +1,19 @@
+.perfil img {
+    background-color: #1E1E1E;
+    border-radius: 50%;
+    padding: 5px;
+    border: solid 2px black;
+    width: 100px;
+}
+
+.perfil {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil p {
+    text-align: center;
+    font-weight: 600;
+}
