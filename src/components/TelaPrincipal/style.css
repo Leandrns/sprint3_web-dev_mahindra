@@ -1,0 +1,11 @@
+.tela-principal {
+    width: 80%;
+    margin: 20px;
+}
+
+.box-infos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}

@@ -4,13 +4,13 @@
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 20px;
+    padding: 20px 60px;
     border-radius: 20px;
 }
 
 .infos {
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
 .title-info {

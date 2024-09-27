@@ -1,7 +1,10 @@
+import { Pilotos } from '../Pilotos'
 import './style.css'
 
 export const Escolhas = () => {
     return (
-        <div></div>
+        <div className='escolhas'>
+            <Pilotos />
+        </div>
     )
 }
