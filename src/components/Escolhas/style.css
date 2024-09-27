@@ -1,4 +1,7 @@
 .escolhas {
-    display: flex;
+    display: flex; 
+    /* aling-itens: center */
     justify-content: center;
+    flex-wrap: wrap;    
+    gap: 40px;
 }
