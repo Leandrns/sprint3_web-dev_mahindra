@@ -6,7 +6,7 @@ export const Motor = () => {
     return (
         <div className="container-motor">
             <h2>MOTOR</h2>
-            <div className="motor">
+            <a href='#'><div className="motor">
                 <p className="nome-motor">JAGUAR I-TYPE 6</p>
                 <div className='equipes-motor'>
                     <p>Jaguar TCS RACING</p>
@@ -18,7 +18,7 @@ export const Motor = () => {
                         preco='11'
                         desempenho='15' />
                 </div>
-            </div>
+            </div></a>
         </div>
     )
 }

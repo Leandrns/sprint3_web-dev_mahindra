@@ -6,7 +6,7 @@ export const Tecnico = () => {
     return (
         <div className="container-tecnico">
             <h2>CHEFE DE EQUIPE</h2>
-            <div className="tecnico">
+            <a href='#'><div className="tecnico">
                 <p className="nome-tecnico">Florian MODLINGER</p>
                 <img src={imgTecnico} alt="Florian" className="img-tecnico" />
                 <div className='infos-tecnico'>
@@ -14,7 +14,7 @@ export const Tecnico = () => {
                         preco='11'
                         desempenho='15' />
                 </div>
-            </div>
+            </div></a>
         </div>
     )
 }
