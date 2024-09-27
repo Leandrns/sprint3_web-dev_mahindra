@@ -6,6 +6,7 @@
     text-align: center;
     border-radius: 20px;
     width: 250px;
+    height: 300px;
     align-items: center;
 }
 
@@ -16,4 +17,8 @@
 
 .nome {
     margin: 15px;
+}
+
+.infos-piloto{
+    width: 100%;
 }

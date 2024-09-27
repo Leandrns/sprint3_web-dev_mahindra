@@ -7,7 +7,7 @@ export const Tecnico = () => {
         <div className="container-tecnico">
             <h2>CHEFE DE EQUIPE</h2>
             <div className="tecnico">
-                <p className="nome-tecnico">Florian </p>
+                <p className="nome-tecnico">Florian MODLINGER</p>
                 <img src={imgTecnico} alt="Florian" className="img-tecnico" />
                 <div className='infos-tecnico'>
                     <DetalhesEscolha 
