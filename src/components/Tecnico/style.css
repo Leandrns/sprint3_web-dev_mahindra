@@ -1,5 +1,8 @@
 .container-tecnico {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,6 +11,7 @@
 
 .container-tecnico h2 {
     padding: 16px;
+    font-family: "Michroma";
     font-family: "Michroma";
 }
 
@@ -26,11 +30,19 @@
 
 .img-tecnico {
     height: 200px;
-    width: 300px;
+    width: 200px;
 }
 
 .nome-tecnico {
     margin: 15px;
+}
+
+.infos-tecnico{
+    width: 100%;
+}
+
+.infos-tecnico{
+    width: 100%;
 }
 
 .infos-tecnico{

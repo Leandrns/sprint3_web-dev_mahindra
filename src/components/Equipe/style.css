@@ -6,6 +6,7 @@
 .container-equipe h2 {
     padding: 16px;
     font-family: "Michroma";
+    font-family: "Michroma";
 }
 
 .equipe {
@@ -23,6 +24,7 @@
 .img-equipe {
     height: 80px;
     width: 300px;
+    margin-top: 20px;
     margin-top: 20px;
     margin-bottom: 5px;
 }

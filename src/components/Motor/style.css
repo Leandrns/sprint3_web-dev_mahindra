@@ -6,6 +6,7 @@
 .container-motor h2 {
     padding: 16px;
     font-family: "Michroma";
+    font-family: "Michroma";
 }
 
 .equipes-motor{
@@ -34,7 +35,11 @@
 }
 
 .nome-motor {
-    margin: 10px;
+    margin: 17px 15px 0 10px;
+}
+
+.infos-motor{
+    width: 100%;
 }
 
 .infos-motor{
