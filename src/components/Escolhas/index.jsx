@@ -1,7 +1,8 @@
-import { Equipe } from '../Equipe'
+import { Equipes } from '../Equipes'
 import { Pilotos } from '../Pilotos'
-import { Tecnico } from '../Tecnico'
-import { Motor } from '../Motor'
+import { Tecnicos } from '../Tecnicos'
+import { Motores } from '../Motores'
+import './style.css'
 
 import './style.css'
 
@@ -9,9 +10,9 @@ export const Escolhas = () => {
     return (
         <div className='escolhas'>
             <Pilotos />
-            <Tecnico />
-            <Equipe />
-            <Motor />
+            <Tecnicos />
+            <Equipes />
+            <Motores />
         </div>
     )
 }

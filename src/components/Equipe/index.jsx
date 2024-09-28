@@ -1,20 +1,17 @@
-import './style.css' 
-import imgEquipe from '../../images/carro_mahindra.png'
+import './style.css'
 import { DetalhesEscolha } from '../DetalhesEscolha'
 
-export const Equipe = () => {
+export const Equipe = (props) => {
     return (
-        <div className="container-equipe">
-            <h2>EQUIPE</h2>
-            <a href='#'><div className="equipe">
-                <p className='nome-equipe'>MAHINDRA RANCING</p>
-                <img src={imgEquipe} alt="Mahindra" className="img-equipe" />
-                <div className='infos-equipe'>
-                    <DetalhesEscolha 
-                        preco='11'
-                        desempenho='15' />
-                </div>
-            </div></a>
-        </div>
-    )
+        <a href='#'><div className="equipe">
+            <p className='nome-equipe'>{props.nome}</p>
+            <img src={props.imgSrc} alt={props.nome} className="img-equipe" />
+            <div className='infos-equipe'>
+                <DetalhesEscolha
+                    preco={props.preco}
+                    desempenho={props.desempenho} 
+                />
+            </div>
+        </div></a>
+    );
 }

@@ -1,24 +1,21 @@
-import './style.css' 
-import imgMotor from '../../images/jaguar.png'
+import './style.css'
+
 import { DetalhesEscolha } from '../DetalhesEscolha'
 
-export const Motor = () => {
+export const Motor = (props) => {
     return (
-        <div className="container-motor">
-            <h2>MOTOR</h2>
-            <a href='#'><div className="motor">
-                <p className="nome-motor">JAGUAR I-TYPE 6</p>
-                <div className='equipes-motor'>
-                    <p>Jaguar TCS RACING</p>
-                    <p>Envision Rancing</p>
-                </div>
-                <img src={imgMotor} alt="JAGUAR I-TYPE 6" className="img-motor" />
-                <div className='infos-motor'>
-                    <DetalhesEscolha 
-                        preco='11'
-                        desempenho='15' />
-                </div>
-            </div></a>
-        </div>
+        <a href='#'><div className="motor">
+            <p className="nome-motor">{props.nome}</p>
+            <div className='equipes-motor'>
+                <p>{props.equipe}</p>
+            </div>
+            <img src={props.imgSrc} alt={props.nome} className="img-motor" />
+            <div className='infos-motor'>
+                <DetalhesEscolha
+                    preco='11'
+                    desempenho='15' />
+            </div>
+        </div></a>
+
     )
 }

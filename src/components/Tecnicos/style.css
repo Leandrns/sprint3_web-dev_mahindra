@@ -1,0 +1,16 @@
+.container-tecnico {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-tecnico h2 {
+    padding: 16px;
+    font-family: "Michroma";
+    font-family: "Michroma";
+}

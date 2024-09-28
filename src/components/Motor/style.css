@@ -1,13 +1,4 @@
-.container-motor {
-    text-align: center;
-    margin-top: 25px;
-}
 
-.container-motor h2 {
-    padding: 16px;
-    font-family: "Michroma";
-    font-family: "Michroma";
-}
 
 .equipes-motor{
     display: flex;
@@ -26,6 +17,11 @@
     width: 400px;
     height: 200px;
     align-items: center;
+    transition: box-shadow ease 0.3s ;
+}
+
+.motor:hover{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .img-motor {
