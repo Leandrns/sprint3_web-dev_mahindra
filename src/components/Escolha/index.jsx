@@ -8,7 +8,7 @@ export const Escolha = (props) => {
             <img src={props.imgSrc} alt={props.nome} className='img-escolha'/>
             <div className='infos-escolha'>
                 <DetalhesEscolha 
-                    preco='11'
+                    preco={props.preco}
                     desempenho='15' />
             </div>
         </div>

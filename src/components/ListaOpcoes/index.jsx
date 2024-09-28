@@ -9,7 +9,6 @@ export const ListaOpcoes = ({opcoes, titulo, onClose}) => {
                 <button onClick={onClose}><i class="bi bi-x"></i></button>
             </div>
             <p>CRÉDITOS</p>
-            {/* {console.log(opcoes) */}
             {opcoes.map((opcao) => (
                 <CardOpcao 
                     id={opcao.id}

@@ -9,7 +9,11 @@ export const Pilotos2 = ({exibirListaOpcoes}) => {
             <h2>PILOTO 2</h2>
             <div className="pilotos">
                 {piloto2
-                ? <Escolha nome={piloto2[0].nome} imgSrc={piloto2[0].imgSrc} onOpen={exibirListaOpcoes}/>
+                ? <Escolha 
+                    nome={piloto2[0].nome} 
+                    imgSrc={piloto2[0].imgSrc} 
+                    preco={piloto2[0].preco}
+                    onOpen={exibirListaOpcoes}/>
                 : <Escolha nome='Escolha seu piloto 2' imgSrc='https://cdn.icon-icons.com/icons2/495/PNG/512/add-circle-1_icon-icons.com_48714.png' onOpen={exibirListaOpcoes}/>}
             </div>
         </div>
