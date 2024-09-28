@@ -2,7 +2,7 @@ import imgEquipe from '../../images/carro_mahindra.png';
 import { Escolha } from '../Escolha';
 import './style.css';
 
-export const Equipes = ({onOpen}) => {
+export const Equipes = ({exibirListaOpcoes}) => {
     return (
         <div className="container-equipe">
             <h2>EQUIPE</h2>
@@ -12,7 +12,7 @@ export const Equipes = ({onOpen}) => {
                     imgSrc={imgEquipe} 
                     preco='14' 
                     desempenho='22'
-                    onOpen={onOpen} 
+                    onOpen={exibirListaOpcoes} 
                 />
             </div>
         </div>

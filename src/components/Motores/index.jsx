@@ -2,7 +2,7 @@ import imgMotor from '../../images/jaguar.png'
 import { Escolha } from '../Escolha';
 import './style.css';
 
-export const Motores = ({onOpen}) => {
+export const Motores = ({exibirListaOpcoes}) => {
     return (
         <div className="container-motor">
             <h2>MOTOR</h2>
@@ -13,7 +13,7 @@ export const Motores = ({onOpen}) => {
                     equipe='JAGUAR TCS RACING e ENVISION RACING'     
                     preco='14' 
                     desempenho='22' 
-                    onOpen={onOpen}
+                    onOpen={exibirListaOpcoes}
                 />
             </div>
         </div>
