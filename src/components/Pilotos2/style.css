@@ -1,0 +1,13 @@
+.pilotos {
+    display: flex;
+    gap: 20px;
+}
+
+.container-pilotos {
+    text-align: center;
+}
+
+.container-pilotos h2 {
+    padding: 16px;
+    font-family: "Michroma";
+}

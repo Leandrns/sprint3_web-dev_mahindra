@@ -2,10 +2,16 @@ import './style.css'
 
 let escolhido = false;
 
-export const CardOpcao = ({nome, equipe, imgSrc, preco}) => {
+
+export const CardOpcao = ({tipo, id, nome, equipe, imgSrc, preco}) => {
+    const adicionarAosEscolhidos = () => {
+        let escolhido = [];
+        escolhido.push({id, nome, equipe, imgSrc, preco});
+        localStorage.setItem(tipo, JSON.stringify(escolhido))
+    }
     return (
-        <div className='card-opcao'>
-            <img src={imgSrc} alt="" />
+        <div className='card-opcao' onClick={adicionarAosEscolhidos}>
+            <img src={imgSrc} alt={nome} />
             <div className="textos">
                 <h2>{nome}</h2>
                 <p>{equipe}</p>

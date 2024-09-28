@@ -12,6 +12,8 @@ export const ListaOpcoes = ({opcoes, titulo, onClose}) => {
             {/* {console.log(opcoes) */}
             {opcoes.map((opcao) => (
                 <CardOpcao 
+                    id={opcao.id}
+                    tipo={opcao.tipo}
                     nome={opcao.nome}
                     equipe={opcao.equipe}
                     imgSrc={opcao.img}
