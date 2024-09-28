@@ -1,17 +1,16 @@
 import { DetalhesEscolha } from '../DetalhesEscolha'
 import './style.css'
 
-export const Piloto = (props) => {
+export const Escolha = (props) => {
     return (
-        <a href='#'><div className='piloto'>
+        <a href='#'><div className='escolha'>
             <p className="nome">{props.nome}</p>
-            <img src={props.urlImg} alt={props.nome} className='img-piloto'/>
-            <div className='infos-piloto'>
+            <img src={props.imgSrc} alt={props.nome} className='img-escolha'/>
+            <div className='infos-escolha'>
                 <DetalhesEscolha 
                     preco='11'
                     desempenho='15' />
             </div>
-            
         </div></a>
     )
 }

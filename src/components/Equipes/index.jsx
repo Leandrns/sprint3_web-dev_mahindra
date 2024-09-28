@@ -1,5 +1,5 @@
 import imgEquipe from '../../images/carro_mahindra.png';
-import { Equipe } from '../Equipe';
+import { Escolha } from '../Escolha';
 import './style.css';
 
 export const Equipes = () => {
@@ -7,7 +7,7 @@ export const Equipes = () => {
         <div className="container-equipe">
             <h2>EQUIPE</h2>
             <div className="equipe-list">
-                <Equipe 
+                <Escolha 
                     nome='MAHINDRA' 
                     imgSrc={imgEquipe} 
                     preco='14' 
