@@ -1,17 +1,18 @@
-import { Equipe } from '../Equipe'
+import { Equipes } from '../Equipes'
 import { Pilotos } from '../Pilotos'
-import { Tecnico } from '../Tecnico'
-import { Motor } from '../Motor'
+import { Tecnicos } from '../Tecnicos'
+import { Motores } from '../Motores'
+import './style.css'
 
 import './style.css'
 
-export const Escolhas = () => {
+export const Escolhas = ({exibirListaOpcoes}) => {
     return (
         <div className='escolhas'>
-            <Pilotos />
-            <Tecnico />
-            <Equipe />
-            <Motor />
+            <Pilotos exibirListaOpcoes={exibirListaOpcoes}/>
+            <Tecnicos exibirListaOpcoes={exibirListaOpcoes}/>
+            <Equipes exibirListaOpcoes={exibirListaOpcoes}/>
+            <Motores exibirListaOpcoes={exibirListaOpcoes}/>
         </div>
     )
 }

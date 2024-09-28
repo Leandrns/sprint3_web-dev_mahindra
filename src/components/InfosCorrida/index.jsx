@@ -1,7 +1,7 @@
 import './style.css'
 
 const titulos = ['QUALIFICATÓRIA', 'DIA', 'CORRIDA']
-const infos = ['9h40 GMT-3', '16 MAR', '14h']
+const infos = ['9h40 GMT-3', '07 DEZ', '14h05']
 
 export const InfosCorrida = () => {
     return (
