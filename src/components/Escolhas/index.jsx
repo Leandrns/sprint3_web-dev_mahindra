@@ -6,13 +6,13 @@ import './style.css'
 
 import './style.css'
 
-export const Escolhas = () => {
+export const Escolhas = ({exibirListaOpcoes}) => {
     return (
         <div className='escolhas'>
-            <Pilotos />
-            <Tecnicos />
-            <Equipes />
-            <Motores />
+            <Pilotos exibirListaOpcoes={exibirListaOpcoes}/>
+            <Tecnicos exibirListaOpcoes={exibirListaOpcoes}/>
+            <Equipes exibirListaOpcoes={exibirListaOpcoes}/>
+            <Motores exibirListaOpcoes={exibirListaOpcoes}/>
         </div>
     )
 }
