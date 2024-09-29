@@ -65,7 +65,7 @@ const tecnicos = [
         "tipo": "tecnico",
         "nome": "Florian MODLINGER",
         "equipe": "Porsche",
-        "img": 'https://cdn-icons-png.flaticon.com/512/4519/4519678.png',
+        "img": '/florian_porsche.png',
         "preco": 15
     },
     {
@@ -73,7 +73,7 @@ const tecnicos = [
         "tipo": "tecnico",
         "nome": "Frederic Bertrand",
         "equipe": "Mahindra Racing",
-        "img": 'https://cdn-icons-png.flaticon.com/512/4519/4519678.png',
+        "img": '/bertrand_mahindra.png',
         "preco": 14
     }
 ]
