@@ -7,4 +7,5 @@
     min-height: calc(100vh - 80px);
     justify-content: space-between;
     font-family: "Mina";
+    z-index: 1;
 }
