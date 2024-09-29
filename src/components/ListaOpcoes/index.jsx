@@ -19,6 +19,7 @@ export const ListaOpcoes = ({opcoes, titulo, onClose}) => {
                     equipe={opcao.equipe}
                     imgSrc={opcao.img}
                     preco={opcao.preco}
+                    desempenho={opcao.desempenho}
                     onClose={onClose}/>
             ))}
             </div>
