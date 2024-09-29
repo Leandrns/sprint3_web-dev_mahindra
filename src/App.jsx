@@ -1,10 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import { Header } from './components/Header';
 import { Aside } from './components/Aside';
 import { TelaPrincipal } from './components/TelaPrincipal';
-
-
 
 function App() {
   return (
