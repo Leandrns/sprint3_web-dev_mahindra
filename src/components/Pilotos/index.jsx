@@ -12,6 +12,7 @@ export const Pilotos = ({exibirListaOpcoes}) => {
                     nome={piloto1[0].nome} 
                     imgSrc={piloto1[0].imgSrc} 
                     preco={piloto1[0].preco}
+                    desempenho={piloto1[0].desempenho}
                     onOpen={exibirListaOpcoes}/> 
                 : <Escolha nome='Escolha seu piloto 1' imgSrc='https://cdn.icon-icons.com/icons2/495/PNG/512/add-circle-1_icon-icons.com_48714.png' onOpen={exibirListaOpcoes}/>}
             </div>

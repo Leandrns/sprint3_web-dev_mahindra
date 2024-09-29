@@ -9,7 +9,7 @@ export const Escolha = (props) => {
             <div className='infos-escolha'>
                 <DetalhesEscolha 
                     preco={props.preco}
-                    desempenho='15' />
+                    desempenho={props.desempenho} />
             </div>
         </div>
     )

@@ -12,7 +12,8 @@ const pilotos1 = [
         "nome": "Nick DE VRIES",
         "equipe": "Mahindra Racing",
         "img": 'https://static-files.formula-e.pulselive.com/drivers/84467676-4d5d-4c97-ae07-0b7520bb95ea/right/large/8bd68290-c0ad-43b6-a1ce-ee162b7d8914.png',
-        "preco": 15
+        "preco": 15,
+        "desempenho": 12
     },
     {
         "id": 1,
@@ -20,7 +21,8 @@ const pilotos1 = [
         "nome": "Mitch EVANS",
         "equipe": "Jaguar TCS Racing",
         "img": 'https://static-files.formula-e.pulselive.com/drivers/84467676-4d5d-4c97-ae07-0b7520bb95ea/right/large/2543b91c-2543-4835-b9fc-17b5fbc79cb1.png',
-        "preco": 18
+        "preco": 18,
+        "desempenho": 16
     },
     {
         "id": 2,
@@ -28,7 +30,8 @@ const pilotos1 = [
         "nome": "Antonio Felix DA COSTA",
         "equipe": "Porsche",
         "img": 'https://static-files.formula-e.pulselive.com/drivers/84467676-4d5d-4c97-ae07-0b7520bb95ea/right/large/fcc99980-3e5d-4a96-856a-8773641ceebe.png',
-        "preco": 17
+        "preco": 17,
+        "desempenho": 15
     }
 ]
 
@@ -39,7 +42,8 @@ const pilotos2 = [
         "nome": "Nick DE VRIES",
         "equipe": "Mahindra Racing",
         "img": 'https://static-files.formula-e.pulselive.com/drivers/84467676-4d5d-4c97-ae07-0b7520bb95ea/right/large/8bd68290-c0ad-43b6-a1ce-ee162b7d8914.png',
-        "preco": 15
+        "preco": 15,
+        "desempenho": 12
     },
     {
         "id": 1,
@@ -47,7 +51,8 @@ const pilotos2 = [
         "nome": "Mitch EVANS",
         "equipe": "Jaguar TCS Racing",
         "img": 'https://static-files.formula-e.pulselive.com/drivers/84467676-4d5d-4c97-ae07-0b7520bb95ea/right/large/2543b91c-2543-4835-b9fc-17b5fbc79cb1.png',
-        "preco": 18
+        "preco": 18,
+        "desempenho": 16
     },
     {
         "id": 2,
@@ -55,7 +60,8 @@ const pilotos2 = [
         "nome": "Antonio Felix DA COSTA",
         "equipe": "Porsche",
         "img": 'https://static-files.formula-e.pulselive.com/drivers/84467676-4d5d-4c97-ae07-0b7520bb95ea/right/large/fcc99980-3e5d-4a96-856a-8773641ceebe.png',
-        "preco": 17
+        "preco": 17,
+        "desempenho": 15
     }
 ]
 
@@ -66,7 +72,8 @@ const tecnicos = [
         "nome": "Florian MODLINGER",
         "equipe": "Porsche",
         "img": '/Florian_porsche.png',
-        "preco": 15
+        "preco": 15,
+        "desempenho": 12
     },
     {
         "id": 1,
@@ -74,7 +81,8 @@ const tecnicos = [
         "nome": "Frederic Bertrand",
         "equipe": "Mahindra Racing",
         "img": '/bertrand_mahindra.png',
-        "preco": 14
+        "preco": 14,
+        "desempenho": 11
     }
 ]
 
@@ -85,7 +93,8 @@ const equipes = [
         "nome": "Mahindra Racing",
         "equipe": "",
         "img": 'https://static-files.formula-e.pulselive.com/cars/84467676-4d5d-4c97-ae07-0b7520bb95ea/fa97d2e7-02ca-4983-a930-4fdaa245a852.png',
-        "preco": 15
+        "preco": 15,
+        "desempenho": 14
     },
     {
         "id": 1,
@@ -93,7 +102,8 @@ const equipes = [
         "nome": "Jaguar TCS Racing",
         "equipe": "",
         "img": 'https://static-files.formula-e.pulselive.com/cars/84467676-4d5d-4c97-ae07-0b7520bb95ea/05dab754-2899-411b-9c4e-72311a36cc9c.png',
-        "preco": 14
+        "preco": 14,
+        "desempenho": 13
     }
 ]
 
@@ -104,7 +114,8 @@ const motores = [
         "nome": "Jaguar I-Type 6",
         "equipe": "",
         "img": 'https://upload.wikimedia.org/wikipedia/pt/8/86/Logotipo_da_Jaguar_2012.png',
-        "preco": 14
+        "preco": 14,
+        "desempenho": 12
     },
     {
         "id": 1,
@@ -112,7 +123,8 @@ const motores = [
         "nome": "Mahindra M9Electro",
         "equipe": "",
         "img": 'https://cdn.worldvectorlogo.com/logos/mahindra-mahindra-logo.svg',
-        "preco": 14
+        "preco": 15,
+        "desempenho": 13
     }
 ]
 
