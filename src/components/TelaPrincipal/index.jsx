@@ -65,7 +65,7 @@ const tecnicos = [
         "tipo": "tecnico",
         "nome": "Florian MODLINGER",
         "equipe": "Porsche",
-        "img": '/florian_porsche.png',
+        "img": '/Florian_porsche.png',
         "preco": 15
     },
     {
