@@ -16,7 +16,7 @@ export const CardOpcao = ({tipo, id, nome, equipe, imgSrc, preco, onClose}) => {
                 <h2>{nome}</h2>
                 <p>{equipe}</p>
             </div>
-            {escolhido == true 
+            {escolhido === true 
                 ? <i class="bi bi-check-lg"></i> 
                 : <h2 className='preco'>{preco}</h2>}
         </div>
