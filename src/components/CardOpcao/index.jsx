@@ -1,13 +1,13 @@
 import './style.css'
-
 let escolhido = false;
 
 
-export const CardOpcao = ({tipo, id, nome, equipe, imgSrc, preco}) => {
+export const CardOpcao = ({tipo, id, nome, equipe, imgSrc, preco, onClose}) => {
     const adicionarAosEscolhidos = () => {
         let escolhido = [];
         escolhido.push({id, nome, equipe, imgSrc, preco});
         localStorage.setItem(tipo, JSON.stringify(escolhido))
+        onClose()
     }
     return (
         <div className='card-opcao' onClick={adicionarAosEscolhidos}>

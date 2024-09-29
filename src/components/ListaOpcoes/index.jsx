@@ -8,7 +8,9 @@ export const ListaOpcoes = ({opcoes, titulo, onClose}) => {
                 <h2>{titulo}</h2>
                 <button onClick={onClose}><i class="bi bi-x"></i></button>
             </div>
+             
             <p className='creditos'>CRÉDITOS</p>
+            <div className='opcoes'>
             {opcoes.map((opcao) => (
                 <CardOpcao 
                     id={opcao.id}
@@ -16,8 +18,10 @@ export const ListaOpcoes = ({opcoes, titulo, onClose}) => {
                     nome={opcao.nome}
                     equipe={opcao.equipe}
                     imgSrc={opcao.img}
-                    preco={opcao.preco}/>
+                    preco={opcao.preco}
+                    onClose={onClose}/>
             ))}
+            </div>
         </div>
     )
 }
