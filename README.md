@@ -7,9 +7,10 @@
 ![image](https://github.com/Leandrns/python-challenge/assets/162051430/d646bbf7-64d9-4386-b640-1a82c17746a5)
 </div>
 
-###Engenharia de Software - FIAP - 1ESA
+##Engenharia de Software - FIAP - 1ESA
 
-###Tecnologias
+
+##Tecnologias
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
