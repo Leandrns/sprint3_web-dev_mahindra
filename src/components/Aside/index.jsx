@@ -5,12 +5,12 @@ import { GameLogo } from '../GameLogo'
 import InfosAside from '../InfosAside';
 import NavButtons from '../NavButtons';
 
-export const Aside = () => {
+export const Aside = ({ telaAtiva, setTelaAtual }) => {
     return (
         <div className="aside">
             <PerfilAside />
             <InfosAside />
-            <NavButtons />
+            <NavButtons telaAtiva={telaAtiva} setTelaAtual={setTelaAtual}/>
             <GameLogo />
             <FooterAside />
         </div>

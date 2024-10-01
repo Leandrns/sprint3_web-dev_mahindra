@@ -1,8 +1,9 @@
 import './style.css';
 
-const Button = ({ text }) => { // Corrigido para começar com letra maiúscula
+const Button = ({ text, isActive, onClick }) => { // Corrigido para começar com letra maiúscula
     return (
-        <button className='nav-button'>
+        <button className={isActive ? 'nav-button active' : 'nav-button'}
+                onClick={onClick}>
             <p>{text}</p>
         </button>
     );

@@ -128,7 +128,7 @@ const motores = [
     }
 ]
 
-export const TelaPrincipal = () => {
+export const TelaPrincipal = ({ telaAtiva }) => {
     localStorage.setItem('pilotos1', JSON.stringify(pilotos1));
     localStorage.setItem('pilotos2', JSON.stringify(pilotos2));
     localStorage.setItem('tecnicos', JSON.stringify(tecnicos));
@@ -212,43 +212,74 @@ export const TelaPrincipal = () => {
         setExibirListaMotores(false);
     }
 
-    return (
-        <div className='tela-principal'>
-            <div className="box-infos">
-                <InfosCorrida />
-                <TimerMercado />
-            </div>
-            <Escolhas 
-                exibirListaPilotos1={renderizarListaPilotos1}
-                exibirListaPilotos2={renderizarListaPilotos2}
-                exibirListaTecnicos={renderizarListaTecnicos}
-                exibirListaEquipes={renderizarListaEquipes}
-                exibirListaMotores={renderizarListaMotores}/>
+    switch(telaAtiva) {
+        case 'tela1':
+            return (
+                <div className='tela-principal'>
+                    <div className="box-infos">
+                        <InfosCorrida />
+                        <TimerMercado />
+                    </div>
+                    <Escolhas 
+                        exibirListaPilotos1={renderizarListaPilotos1}
+                        exibirListaPilotos2={renderizarListaPilotos2}
+                        exibirListaTecnicos={renderizarListaTecnicos}
+                        exibirListaEquipes={renderizarListaEquipes}
+                        exibirListaMotores={renderizarListaMotores}/>
 
-            {exibirListaPilotos1 && <ListaOpcoes 
-                                opcoes={pilotos1Storage}
-                                titulo="Escolha seu Piloto 1"
-                                onClose={fecharListaPilotos1}/>}
+                    {exibirListaPilotos1 && <ListaOpcoes 
+                                        opcoes={pilotos1Storage}
+                                        titulo="Escolha seu Piloto 1"
+                                        onClose={fecharListaPilotos1}/>}
 
-            {exibirListaPilotos2 && <ListaOpcoes 
-                                opcoes={pilotos2Storage}
-                                titulo="Escolha seu Piloto 2"
-                                onClose={fecharListaPilotos2}/>}
+                    {exibirListaPilotos2 && <ListaOpcoes 
+                                        opcoes={pilotos2Storage}
+                                        titulo="Escolha seu Piloto 2"
+                                        onClose={fecharListaPilotos2}/>}
 
-            {exibirListaTecnicos && <ListaOpcoes 
-                                opcoes={tecnicosStorage}
-                                titulo="Escolha seu Chefe de Equipe"
-                                onClose={fecharListaTecnicos}/>}
+                    {exibirListaTecnicos && <ListaOpcoes 
+                                        opcoes={tecnicosStorage}
+                                        titulo="Escolha seu Chefe de Equipe"
+                                        onClose={fecharListaTecnicos}/>}
 
-            {exibirListaEquipes && <ListaOpcoes 
-                                opcoes={equipesStorage}
-                                titulo="Escolha sua Equipe"
-                                onClose={fecharListaEquipes}/>}
+                    {exibirListaEquipes && <ListaOpcoes 
+                                        opcoes={equipesStorage}
+                                        titulo="Escolha sua Equipe"
+                                        onClose={fecharListaEquipes}/>}
 
-            {exibirListaMotores && <ListaOpcoes 
-                                opcoes={motoresStorage}
-                                titulo="Escolha seu Motor"
-                                onClose={fecharListaMotores}/>}
-        </div>
-    )
+                    {exibirListaMotores && <ListaOpcoes 
+                                        opcoes={motoresStorage}
+                                        titulo="Escolha seu Motor"
+                                        onClose={fecharListaMotores}/>}
+                </div>
+            )
+        
+        case 'tela2':
+            return (
+                <div className="tela-principal">
+
+                </div>
+            )
+
+        case 'tela3':
+            return (
+                <div className="tela-principal">
+
+                </div>
+            )
+
+        case 'tela4':
+            return (
+                <div className="tela-principal">
+
+                </div>
+            )
+
+        case 'tela5':
+            return (
+                <div className="tela-principal">
+
+                </div>
+            )
+    }  
 }
