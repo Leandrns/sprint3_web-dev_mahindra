@@ -5,7 +5,7 @@ import { TelaPrincipal } from './components/TelaPrincipal';
 import { useState } from 'react';
 
 function App() {
-  const [telaAtual, setTelaAtual] = useState('tela1');
+  const [telaAtual, setTelaAtual] = useState('');
 
   return (
     <div className="App">

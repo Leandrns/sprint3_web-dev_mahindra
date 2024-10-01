@@ -281,5 +281,12 @@ export const TelaPrincipal = ({ telaAtiva }) => {
 
                 </div>
             )
+
+        default:
+            return (
+                <div className="tela-principal">
+                    <p>Seja bem-vindo ao HitRace</p>
+                </div>
+            )
     }  
 }
