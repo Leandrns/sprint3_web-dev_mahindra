@@ -4,6 +4,7 @@ import { TimerMercado } from '../TimerMercado/index.jsx'
 import { Escolhas } from '../Escolhas/index.jsx'
 import { useState } from 'react'
 import { ListaOpcoes } from '../ListaOpcoes/index.jsx'
+import { AoVivo } from '../AoVivo/index.jsx';
 
 const pilotos1 = [
     {
@@ -264,7 +265,7 @@ export const TelaPrincipal = ({ telaAtiva }) => {
         case 'tela3':
             return (
                 <div className="tela-principal">
-
+                    <AoVivo />
                 </div>
             )
 
