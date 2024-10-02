@@ -1,11 +1,11 @@
-import './App.css';
-import { Header } from './components/Header';
-import { Aside } from './components/Aside';
-import { TelaPrincipal } from './components/TelaPrincipal';
 import { useState } from 'react';
+import './App.css';
+import { Aside } from './components/Aside';
+import { Header } from './components/Header';
+import { TelaPrincipal } from './components/TelaPrincipal';
 
 function App() {
-  const [telaAtual, setTelaAtual] = useState('');
+  const [telaAtual, setTelaAtual] = useState('tela1');
 
   return (
     <div className="App">

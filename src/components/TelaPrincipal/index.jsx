@@ -1,10 +1,9 @@
-import './style.css'
-import { InfosCorrida } from '../InfosCorrida'
-import { TimerMercado } from '../TimerMercado/index.jsx'
-import { Escolhas } from '../Escolhas/index.jsx'
 import { useState } from 'react'
+import { Escolhas } from '../Escolhas/index.jsx'
+import { InfosCorrida } from '../InfosCorrida'
 import { ListaOpcoes } from '../ListaOpcoes/index.jsx'
-import { AoVivo } from '../AoVivo/index.jsx';
+import { TimerMercado } from '../TimerMercado/index.jsx'
+import './style.css'
 
 const pilotos1 = [
     {
@@ -147,22 +146,22 @@ export const TelaPrincipal = ({ telaAtiva }) => {
     let tecnicosStorage = JSON.parse(localStorage.getItem('tecnicos'));
     let equipesStorage = JSON.parse(localStorage.getItem('equipes'));
     let motoresStorage = JSON.parse(localStorage.getItem('motores'));
-    
-    if(piloto1) {
+
+    if (piloto1) {
         pilotos1Storage = pilotos1Storage.filter(piloto => piloto.id !== piloto1[0].id);
         pilotos2Storage = pilotos2Storage.filter(piloto => piloto.id !== piloto1[0].id);
     }
-    if(piloto2) {
+    if (piloto2) {
         pilotos2Storage = pilotos2Storage.filter(piloto => piloto.id !== piloto2[0].id);
         pilotos1Storage = pilotos1Storage.filter(piloto => piloto.id !== piloto2[0].id);
     }
-    if(tecnico) {
+    if (tecnico) {
         tecnicosStorage = tecnicosStorage.filter(t => t.id !== tecnico[0].id);
     }
-    if(equipe) {
+    if (equipe) {
         equipesStorage = equipesStorage.filter(e => e.id !== equipe[0].id);
     }
-    if(motor) {
+    if (motor) {
         motoresStorage = motoresStorage.filter(m => m.id !== motor[0].id);
     }
 
@@ -213,7 +212,7 @@ export const TelaPrincipal = ({ telaAtiva }) => {
         setExibirListaMotores(false);
     }
 
-    switch(telaAtiva) {
+    switch (telaAtiva) {
         case 'tela1':
             return (
                 <div className='tela-principal'>
@@ -221,73 +220,38 @@ export const TelaPrincipal = ({ telaAtiva }) => {
                         <InfosCorrida />
                         <TimerMercado />
                     </div>
-                    <Escolhas 
+                    <Escolhas
                         exibirListaPilotos1={renderizarListaPilotos1}
                         exibirListaPilotos2={renderizarListaPilotos2}
                         exibirListaTecnicos={renderizarListaTecnicos}
                         exibirListaEquipes={renderizarListaEquipes}
-                        exibirListaMotores={renderizarListaMotores}/>
+                        exibirListaMotores={renderizarListaMotores} />
 
-                    {exibirListaPilotos1 && <ListaOpcoes 
-                                        opcoes={pilotos1Storage}
-                                        titulo="Escolha seu Piloto 1"
-                                        onClose={fecharListaPilotos1}/>}
+                    {exibirListaPilotos1 && <ListaOpcoes
+                        opcoes={pilotos1Storage}
+                        titulo="Escolha seu Piloto 1"
+                        onClose={fecharListaPilotos1} />}
 
-                    {exibirListaPilotos2 && <ListaOpcoes 
-                                        opcoes={pilotos2Storage}
-                                        titulo="Escolha seu Piloto 2"
-                                        onClose={fecharListaPilotos2}/>}
+                    {exibirListaPilotos2 && <ListaOpcoes
+                        opcoes={pilotos2Storage}
+                        titulo="Escolha seu Piloto 2"
+                        onClose={fecharListaPilotos2} />}
 
-                    {exibirListaTecnicos && <ListaOpcoes 
-                                        opcoes={tecnicosStorage}
-                                        titulo="Escolha seu Chefe de Equipe"
-                                        onClose={fecharListaTecnicos}/>}
+                    {exibirListaTecnicos && <ListaOpcoes
+                        opcoes={tecnicosStorage}
+                        titulo="Escolha seu Chefe de Equipe"
+                        onClose={fecharListaTecnicos} />}
 
-                    {exibirListaEquipes && <ListaOpcoes 
-                                        opcoes={equipesStorage}
-                                        titulo="Escolha sua Equipe"
-                                        onClose={fecharListaEquipes}/>}
+                    {exibirListaEquipes && <ListaOpcoes
+                        opcoes={equipesStorage}
+                        titulo="Escolha sua Equipe"
+                        onClose={fecharListaEquipes} />}
 
-                    {exibirListaMotores && <ListaOpcoes 
-                                        opcoes={motoresStorage}
-                                        titulo="Escolha seu Motor"
-                                        onClose={fecharListaMotores}/>}
+                    {exibirListaMotores && <ListaOpcoes
+                        opcoes={motoresStorage}
+                        titulo="Escolha seu Motor"
+                        onClose={fecharListaMotores} />}
                 </div>
             )
-        
-        case 'tela2':
-            return (
-                <div className="tela-principal">
-
-                </div>
-            )
-
-        case 'tela3':
-            return (
-                <div className="tela-principal">
-                    <AoVivo />
-                </div>
-            )
-
-        case 'tela4':
-            return (
-                <div className="tela-principal">
-
-                </div>
-            )
-
-        case 'tela5':
-            return (
-                <div className="tela-principal">
-
-                </div>
-            )
-
-        default:
-            return (
-                <div className="tela-principal">
-                    <p>Seja bem-vindo ao HitRace</p>
-                </div>
-            )
-    }  
+    }
 }
